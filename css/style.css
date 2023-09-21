@@ -30,7 +30,7 @@ https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    text-shadow: 0px 5px 10px #101119;
+    text-shadow: 2px 2px 1px #101119;
  }
  
  a {
@@ -61,6 +61,8 @@ header {
  }
 
  nav > a {
+    text-decoration: solid;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     padding: 0px 20px;
@@ -116,6 +118,9 @@ main {
     min-width: 100%;
 }
 
+#landing {
+    margin-bottom: 50px;
+}
 
 #landing-space {
     display: flex;
@@ -144,11 +149,14 @@ main {
 #landing-buttons > ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
  }
 #landing-buttons > ul > a {
     background-color: #EF233C;
     border-radius: 5px;
-    margin: 0px 25px;
+    margin: 10px 25px;
     padding: 10px;
     transition: background-color 0.1s, color 0.1s;
     display: flex;
@@ -158,22 +166,27 @@ main {
 
 
 #landing-main-card {
-    background-color: #8D99AE;
-    margin: 0px 40px;
-    border-radius: 10px;
+    background-color: #D90429;
+    margin: 40px 40px;
+    padding-bottom: 20px;
+    border-radius:10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
+#landing-main-card > h2 {
+    padding: 20px 50px;
+    border-bottom: 1px solid black;
+}
 #landing-main-card-nav {
     position: relative;
-    top: -80px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+    top: -100px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
 }
 
 #landing-cities {
-    background-color: rgb(255, 255, 255);
+    background-color: #BDC6D1;
     border-radius: 20px; 
     margin: 10px;
     display: flex;
@@ -184,13 +197,19 @@ main {
 .city-card {
     background-color: #EDF2F4;
     border-radius: 20px;
-    margin: 10px 15px;
+    margin: 20px 15px;
     max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    text-align: justify;   
+    justify-content: flex-start; 
+    text-align: justify;
+    
+    transition: transform 0.5s;
+}
+
+.city-card:hover {
+    transform: scale(1.05);
 }
 
 .city-card > img {
@@ -202,3 +221,63 @@ main {
     width: 80%;
 }
 
+#conocenos {
+    background-color: #BDC6D1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+#conocenos-nav {
+    position: relative;
+    top: -100px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+}
+
+#conocenos > h2 {
+    margin: 80px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    text-shadow: 2px 2px black
+}
+#conocenos > p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 80px;
+
+}
+
+#inscribete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#inscribete > h2 {
+    margin: 0px 20px;
+    margin-bottom: 40px;
+}
+
+#inscribete > form {
+    display: flex;
+    flex-direction: column;
+    background-color: #D90429;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+}
+
+#inscribete > form > label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+#inscribete > form > input {
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+#inscribete > form > input:hover {
+    border-color: #EF233C;
+}
