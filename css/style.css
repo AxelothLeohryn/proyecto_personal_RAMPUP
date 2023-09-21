@@ -9,21 +9,35 @@
 
 :root {
     --header-heigth: 80px;
-    --black: #161A1D;
+    --black: #2B2D42;
     --white: #F5F3F4;
 }
+
+/*Color palette de la página: https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff 
+
+https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429
+
+*/
+
 /* --------General---------*/
  * {
     font-family: 'Montserrat', sans-serif;
  }
- 
- h1 {
+
+ h2 {
     color: var(--white);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
  }
  
  a {
     text-decoration: solid;
     color: rgb(255, 255, 255);
+ }
+ 
+ body {
+    background-color: #101119;
  }
 
 /* --------Header---------*/
@@ -48,16 +62,24 @@ header {
     display: flex;
     flex-direction: row;
     padding: 0px 20px;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.1s, color 0.1s;
  }
- nav > a:hover {
-    background-color: #660708;
-    transform: translateX(-10px);
- }
+  /*Efectos del logo de la pagina*/
+    nav > a:hover {
+        background-color: #232537;
+        transform: translateX(-10px);
+    }
+    nav > a:active {
+        background-color: #202232;
+}
  nav > a > img {
     padding-right: 10px;
     height: var(--header-heigth);
     filter: brightness(0) invert(1); /*Convierto favicon en blanco para crear el logo de la pagina*/
+ }
+ header > nav > a > h1 {
+    font-family: "GT America Epanded Black Italic", sans-serif;
+    color: var(--white);
  }
 nav > ul {
     display: flex;
@@ -73,10 +95,16 @@ nav > ul > a {
     transition: background-color 0.2s, color 0.2s;
 
 }
-nav > ul > a:hover {
-    background-color: #A4161A;
-    transform: scale(1.1);
-}
+/*Efectos de los botones del header*/
+    nav > ul > a:hover {
+        background-color: #EF233C;
+        transform: scale(1.1);
+    }
+    nav > ul> a:active {
+        background-color: #D90429;
+    }
+
+/*Pagina actual --> inline en cada html*/
 
 
 /* --------Main---------*/
@@ -85,6 +113,63 @@ main {
     top: var(--header-heigth);
 }
 
-h1 {
-    font-family: "GT America Epanded Black Italic", sans-serif;
+#landing {
+    margin-top: 50px;
 }
+
+#landing-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#landing-title > h1 {
+    font-family: "GT America Epanded Black Italic", sans-serif;
+    color: var(--white);
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+}
+#landing-title > h2 {
+    color: #8D99AE;
+    margin: 10px;
+}
+
+#landing-main-card {
+    background-color: #8D99AE;
+    margin: 100px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#landing-cities {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px; /*temporal hasta que tenga imagenes*/
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.city-card {
+    background-color: #EDF2F4;
+    border-radius: 20px;
+    margin: 10px 15px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;   
+}
+
+.city-card > img {
+    width: 70%;
+    border-radius: 5px;
+}
+.city-card > h4 {
+    word-wrap: break-word;
+}
+
