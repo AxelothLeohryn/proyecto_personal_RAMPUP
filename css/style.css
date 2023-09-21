@@ -22,13 +22,15 @@ https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429
 /* --------General---------*/
  * {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
  }
 
  h2 {
-    color: var(--white);
+    color: white;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    text-shadow: 0px 5px 10px #101119;
  }
  
  a {
@@ -109,34 +111,55 @@ nav > ul > a {
 
 /* --------Main---------*/
 main {
-    position: relative;
+    position: absolute;
     top: var(--header-heigth);
+    min-width: 100%;
 }
 
-#landing {
-    margin-top: 50px;
-}
 
-#landing-title {
+#landing-space {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    min-height: 100vh;
 }
-#landing-title > h1 {
+#landing-text > h1 {
     font-family: "GT America Epanded Black Italic", sans-serif;
     color: var(--white);
     font-size: 50px;
     text-align: center;
     margin: 20px;
 }
-#landing-title > h2 {
+#landing-text > h2 {
     color: #8D99AE;
     margin: 10px;
 }
 
+#landing-buttons {
+    margin-top: 200px;
+}
+
+#landing-buttons > ul {
+    display: flex;
+    flex-direction: row;
+ }
+#landing-buttons > ul > a {
+    background-color: #EF233C;
+    border-radius: 5px;
+    margin: 0px 25px;
+    padding: 10px;
+    transition: background-color 0.1s, color 0.1s;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
 #landing-main-card {
     background-color: #8D99AE;
-    margin: 100px 40px;
+    margin: 0px 40px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -144,9 +167,14 @@ main {
     justify-content: space-evenly;
 }
 
+#landing-main-card-nav {
+    position: relative;
+    top: -80px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+}
+
 #landing-cities {
     background-color: rgb(255, 255, 255);
-    border-radius: 20px; /*temporal hasta que tenga imagenes*/
+    border-radius: 20px; 
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -162,14 +190,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    text-align: center;   
+    text-align: justify;   
 }
 
 .city-card > img {
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
 }
-.city-card > h4 {
+.city-card > h4 {   
     word-wrap: break-word;
+    width: 80%;
 }
 
