@@ -139,7 +139,7 @@ main {
 
 #landing-main-card {
     background-color: #D90429;
-    margin: 40px 40px;
+    margin: 20px 20px;
     padding-bottom: 20px;
     border-radius:10px;
     display: flex;
@@ -154,7 +154,7 @@ main {
 }
 #landing-main-card-nav {
     position: relative;
-    top: -100px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+    top: 0px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
 }
 
 #landing-cities {
@@ -164,13 +164,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 
 .city-card {
     background-color: #EDF2F4;
     border-radius: 20px;
     margin: 20px 15px;
-    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,11 +202,11 @@ main {
 
 #conocenos-nav {
     position: relative;
-    top: -100px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+    top: 0px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
 }
 
 #conocenos > h2 {
-    margin: 80px;
+    margin: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
     text-shadow: 2px 2px black
@@ -215,7 +215,7 @@ main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-align: justify;
-    margin: 10px 80px;
+    margin: 10px 40px;
 
 }
 
@@ -237,7 +237,7 @@ main {
     background-color: #D90429;
     border-radius: 5px;
     padding: 20px;
-    width: 50%;
+    width: 90%;
 }
 
 #inscribete > form > label {
@@ -253,6 +253,11 @@ main {
 #inscribete > form > input:hover {
     border-color: #EF233C;
 }
+footer {
+    margin: 5px 15px;
+    text-align: center;
+}
+
 
 
 
@@ -264,7 +269,7 @@ main {
         position: fixed;
         top: 0;
         left: 0;
-        height: 120px;
+        height: 80px;
         width: 100%;
         background-color: #2B2D42;
         z-index: 1000;
@@ -275,6 +280,7 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     nav>a {
@@ -282,13 +288,13 @@ main {
         color: rgb(255, 255, 255);
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
-        padding: 0px 20px;
+        justify-content: flex-start;
+        height: 100%;
         transition: background-color 0.1s, color 0.1s;
     }
     nav>a:hover {
         background-color: #2B2D42;
-        transform: translateX(10px);
+        transform: translateX(-5px);
     }
 
     nav>a>img {
@@ -296,15 +302,91 @@ main {
         height: 80px;
         filter: brightness(0) invert(1);
     }
+    nav > ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav > ul > a {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     nav>ul>a:hover {
         background-color: #EF233C;
         transform: scale(1.1);
     }
-
     main {
         position: relative;
-        top: 120px;
-        margin: 0;
+        top: 80px;
+    }
+    #landing {
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+    #landing-space {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+
+    #landing-main-card {
+        background-color: #D90429;
+        margin: 40px 40px;
+        padding-bottom: 20px;
+        border-radius:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #landing-buttons {
+        margin-top: 100px;
+    }
+    
+    #landing-cities {
+        background-color: #BDC6D1;
+        border-radius: 20px; 
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+    .city-card {
+        background-color: #EDF2F4;
+        width: 30%;
+        border-radius: 20px;
+        margin: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        text-align: justify;
+        
+        transition: transform 0.5s;
+    }
+    #button:hover {
+        background-color: #D90429;
+        transform: scale(1.1);
+    }
+    #landing-main-card-nav {
+        position: relative;
+        top: -80px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+    }
+    #conocenos-nav {
+        position: relative;
+        top: -80px; /*Para corregir que el scroll ponga el titulo de la seccion por detras del nav*/
+    }
+    #inscribete > form {
+        width: 50%;
     }
 
 
