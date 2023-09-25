@@ -1,95 +1,124 @@
 @font-face {
-    font-family: "GT America Epanded Black Italic";
+    font-family: "GT America Epanded Black Italic" ;
     src: url(../assets/fonts/GT-America-Expanded-Black-Italic-Trial.otf);
 }
-
 @font-face {
     font-family: "GT America Mono Black";
     src: url(../assets/fonts/GT-America-Mono-Black-Trial.otf);
 }
 
+:root {
+    --header-heigth: 80px;
+    --black: #2B2D42;
+    --white: #F5F3F4;
+}
+
 /*Color palette de la página: https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff 
 
-https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429
 
-* {
+*/
+
+/* --------General---------*/
+ * {
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: inherit;
     scroll-behavior: smooth;
-}
-body {
-    background-color: #101119;
-}
-h2 {
+ }
+
+ h2 {
     color: white;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     text-shadow: 2px 2px 1px #101119;
-}
+ }
+ 
+ a {
+    text-decoration: solid;
+    color: rgb(255, 255, 255);
+ }
+ 
+ body {
+    background-color: #101119;
+ }
+
+/* --------Header---------*/
 header {
-    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-color: var(--black);
+    z-index: 1000;
 }
 nav {
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-nav>a {
-    font-family: "GT America Epanded Black Italic";
-    height: 50%;
-    width: 100%;
+    justify-content: space-between;
+ }
+
+ nav > a {
+    text-decoration: solid;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #232537;
-    border-bottom: 1px solid black;
-    text-shadow: 5px 5px 2px #101119;
+    margin-top: 10px;
+    padding: 0px 20px;
     transition: background-color 0.1s, color 0.1s;
-}
-/*Efectos hover logo*/
-    nav>a:active {
-        background-color: #202232;
-    }
-nav>a>img {
-    height: 90%;
-    filter: brightness(0) invert(1);
-    text-shadow: 5px 5px 2px #101119;
-}
-nav>a>h1 {
+ }
+ nav > a > img {
+    padding-right: 10px;
+    height: 80px;
+    filter: brightness(0) invert(1); /*Convierto favicon en blanco para crear el logo de la pagina*/
+ }
+ header > nav > a > h1 {
     font-family: "GT America Epanded Black Italic", sans-serif;
-    color: white;
-    margin: 2px;
-    margin-left: 20px;
-}
-nav>ul {
-    height: 50%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    color: var(--white);
+ }
+nav > ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+    list-style: none;
+    margin: 0px;
 }
-nav>ul>a {
-    box-sizing: border-box;
-    text-align: center;
-    width: 25%;
-    padding: 20px 0px;
-    color: white;
-}
-/*Efectos de los botones del nav*/
-    nav>ul>a:active {
-        background-color: #D90429;
-    }
-main {
+
+nav > ul > a {
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px 20px;
+    transition: background-color 0.2s, color 0.2s;
 
 }
+ 
+  /*Efectos del logo de la pagina*/
+    nav > a:hover {
+        background-color: #232537;
+        transform: translateX(-10px);
+    }
+    nav > a:active {
+        background-color: #202232;
+}
+/*Efectos de los botones del header*/
+    nav > ul > a:hover {
+        background-color: #EF233C;
+        transform: scale(1.1);
+    }
+    nav > ul> a:active {
+        background-color: #D90429;
+    }
+
+/*Pagina actual --> inline en cada html*/
+
+
+/* --------Main---------*/
+main {
+    position: absolute;
+    top: 180px;
+    min-width: 100%;
+}
+
 #landing {
     margin-bottom: 50px;
 }
@@ -104,7 +133,7 @@ main {
 }
 #landing-text > h1 {
     font-family: "GT America Epanded Black Italic", sans-serif;
-    color: white;
+    color: var(--white);
     font-size: 50px;
     text-align: center;
     margin: 20px;
@@ -256,56 +285,54 @@ main {
 
 
 
+/*Media queries*/
 
-
-
-@media only screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     header {
         position: fixed;
         top: 0;
         left: 0;
-        height: 120px;
         width: 100%;
-        background-color: #2B2D42;
+        height: var(--header-heigth);
+        background-color: var(--black);
         z-index: 1000;
     }
-
-    nav {
-        height: 100%;
+    
+     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    nav>a {
+     }
+    
+     nav > a {
         text-decoration: solid;
         color: rgb(255, 255, 255);
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
         padding: 0px 20px;
         transition: background-color 0.1s, color 0.1s;
-    }
-    nav>a:hover {
-        background-color: #2B2D42;
-        transform: translateX(10px);
-    }
-
-    nav>a>img {
+     }
+     nav > a > img {
         padding-right: 10px;
-        height: 80px;
-        filter: brightness(0) invert(1);
+        height: var(--header-heigth);
+        filter: brightness(0) invert(1); /*Convierto favicon en blanco para crear el logo de la pagina*/
+     }
+     header > nav > a > h1 {
+        font-family: "GT America Epanded Black Italic", sans-serif;
+        color: var(--white);
+     }
+    nav > ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        margin: 0px;
     }
-    nav>ul>a:hover {
-        background-color: #EF233C;
-        transform: scale(1.1);
+    
+    nav > ul > a {
+        font-family: 'Montserrat', sans-serif;
+        padding: 30px 20px;
+        transition: background-color 0.2s, color 0.2s;
+    
     }
-
-    main {
-        position: relative;
-        top: 120px;
-        margin: 0;
-    }
-
-
 }
