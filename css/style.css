@@ -115,7 +115,7 @@ main {
 }
 
 #landing-buttons {
-    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 #landing-buttons > ul {
@@ -148,9 +148,19 @@ main {
     justify-content: space-evenly;
 }
 
-#landing-main-card > h2 {
+#landing-main-card > a > h2 {
     padding: 20px 50px;
-    border-bottom: 1px solid black;
+    background-color: #101119;
+    border-radius: 10px;
+    margin: 10px 10px;
+    box-shadow: 5px 5px 5px black;
+
+    transition: transform 0.25s, scale 0.25s;
+}
+#landing-main-card > a > h2:hover {
+    transform: translateX(5px);
+    transform: translateY(-5px);
+    transform: scale(1.1);
 }
 #landing-main-card-nav {
     position: relative;
@@ -170,6 +180,7 @@ main {
 .city-card {
     background-color: #EDF2F4;
     border-radius: 20px;
+    padding: 0px;
     margin: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -254,11 +265,59 @@ main {
     border-color: #EF233C;
 }
 footer {
+    position: relative;
+    top: 80px;
     margin: 5px 15px;
     text-align: center;
 }
 
 
+/*Destinos*/
+.city-article {
+    background-color: #BDC6D1;
+}
+.city-article > h2 {
+    position: sticky;
+    top: 0px;
+    background-color: #101119;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
+}
+.city-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.city-details > p {
+    margin: 20px;
+    width: 60%;
+}
+.city-details > img {
+    width: 40%;
+    height: auto;
+    background-color: #2B2D42;
+    padding: 10vh 0px;
+}
+.right-img {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: -5px 5px 5px black;
+}
+.left-img {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.justify-right {
+    text-align: right;
+}
+.justify-left {
+    text-align: left;
+}
 
 
 
