@@ -28,6 +28,9 @@ h2 {
     text-align: center;
     text-shadow: 2px 2px 1px #101119;
 }
+p {
+    font-size: 18px;
+}
 header {
     height: 120px;
 }
@@ -284,6 +287,8 @@ footer {
     border-bottom-right-radius: 20px;
     padding: 10px;
 
+    z-index: 1;
+
 }
 .city-details {
     display: flex;
@@ -447,6 +452,29 @@ footer {
     #inscribete > form {
         width: 50%;
     }
-
-
+    .city-article > h2 {
+        position: sticky;
+        top: 80px;
+        background-color: #101119;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 10px;
+    
+    }
+    
+    /*Efectos hover escritorio*/
+    .right-img {
+        transform: translateX(50px);
+        transition: transform 0.4s;
+    }
+    .left-img {
+        transform: translateX(-50px);
+        transition: transform 0.4s;
+    }
+    .right-img:hover {
+        transform: translateX(0px);
+    }
+    .left-img:hover {
+        transform: translateX(0px);
+    }
 }
