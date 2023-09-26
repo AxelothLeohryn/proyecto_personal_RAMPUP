@@ -68,7 +68,7 @@ nav>a:active {
 }
 
 nav>a>img {
-    height: 90%;
+    height: 80%;
     filter: brightness(0) invert(1);
     text-shadow: 5px 5px 2px #101119;
 }
@@ -76,8 +76,7 @@ nav>a>img {
 nav>a>h1 {
     font-family: "GT America Epanded Black Italic", sans-serif;
     color: white;
-    margin: 2px;
-    margin-left: 20px;
+    margin: 5px 10px;
 }
 
 nav>ul {
@@ -670,6 +669,7 @@ input[type="submit"]:hover {
         padding: 20px 5px;
 
     }
+
     #contacto-article>form {
         max-width: 50%;
     }
