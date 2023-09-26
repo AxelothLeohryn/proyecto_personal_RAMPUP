@@ -330,9 +330,11 @@ footer {
 .city-details>img,
 video {
     width: 40%;
-    height: auto;
+    height: 40vh;
     background-color: #2B2D42;
-    padding: 10vh 0px;
+    padding: 10px 0px;
+    object-fit: cover;
+
 }
 
 .right-img {
@@ -433,6 +435,7 @@ footer>p {
     align-content: center;
     flex-wrap: wrap;
     padding: 5px;
+    padding-top: 20px;
 }
 
 input[type="text"],
