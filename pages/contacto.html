@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTravelers: Contacto</title>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../assets/favicon/favicon.webp" alt="TT">
+                <h1>Tech Travelers</h1>
+            </a>
+            <ul>
+                <a href="../index.html">Inicio</a>
+                <a href="./destinos.html">Destinos</a>
+                <a href="./eventos.html">Próximos Eventos</a>
+                <a href="#" style="background-color: #A0031D;">Contacto</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="contacto-article">
+            <h2>¿Quieres más información? Cuéntanos quien eres y qué te interesa.</h2>
+            <form id="contact-form">
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="fname" placeholder="Introduce tu nombre" minlength="3"
+                    maxlenght="30" required autofocus/>
+
+                <label for="lname">Apellidos:</label>
+                <input type="text" id="lname" name="lname" placeholder="Introduce tus apellidos" minlength="3"
+                    maxlenght="30" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email" required />
+
+                <label for="tlf">Teléfono:</label>
+                <input type="tel" id="tlf" name="tlf" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Introduce tu número" required />
+
+                <label for="continent">¿En qué continente vives?</label>
+                <select id="continent" name="continent">
+                    <option value="europa">Europa</option>
+                    <option value="america">América</option>
+                    <option value="asia">Asia</option>
+                    <option value="africa">África</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+
+                <label for="favorite-tech">¿Cual es tu dispositivo <i>tech</i> favorito?</label>
+
+                <label for="smartphone"><input type="radio" id="smartphone" name="favorite-tech" value="smartphone" />Smartphone</label>
+
+                <label for="laptop"><input type="radio" id="laptop" name="favorite-tech" value="laptop" />Laptop</label>
+
+                <label for="consola"><input type="radio" id="consola" name="favorite-tech" value="consola" />Consola</label>
+
+                <label for="wearable"><input type="radio" id="wearable" name="favorite-tech" value="wearable" />Wearable</label>
+
+                <label for="comments">¿Algo que te inquiete del mundo tech?</label>
+                <textarea rows="2" cols="30" name="comments" wrap="hard" placeholder="Dónde será la siguiente conferencia..."></textarea>
+
+                <label><input type="checkbox" id="accept" value="accept" name="accept" />
+                    Acepto los términos legales</label>
+
+                <label for="spam"><input type="checkbox" id="spam" value="spam" name="spam" /> Acepto
+                    recibir publicidad</label>
+
+                <input type="submit" value="Enviar" />
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>Copyright © 2023 | · Todos los derechos reservados · Aviso Legal | Política de privavidad | Política de
+            cookies</p>
+    </footer>
+</body>
+
+</html>

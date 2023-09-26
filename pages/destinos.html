@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinos</title>
-    <link rel="shortcut icon" href="./assets/favicon/favicon.webp" type="image/x-icon">
+    <title>TechTravelers: Destinos</title>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="./assets/favicon/favicon.png" alt="TT"><h1>Tech Travelers</h1></a>
+            <a href="../index.html"><img src="../assets/favicon/favicon.webp" alt="TT">
+                <h1>Tech Travelers</h1>
+            </a>
             <ul>
                 <a href="../index.html">Inicio</a>
-                <a href="#" style="background-color: #A0031D;">Destinos</a> <!--En rojo sección de la página actual, hasta que aprenda a hacerlo con JS -->
-                <a href="#">Próximos Eventos</a>
-                <a href="#">Contacto</a>
+                <a href="#" style="background-color: #A0031D;">Destinos</a>
+                <!--En rojo sección de la página actual, hasta que aprenda a hacerlo con JS -->
+                <a href="./eventos.html">Próximos Eventos</a>
+                <a href="./contacto.html">Contacto</a>
             </ul>
         </nav>
     </header>
@@ -27,46 +32,76 @@
         <article id="sanFrancisco" class="city-article">
             <h2>San Francisco, California</h2>
             <section class="city-details">
-                <p class="justify-left">San Francisco, conocida como la "Ciudad de la Bahía", es un epicentro tecnológico situado en la costa oeste de los Estados Unidos. El icónico Golden Gate Bridge, que se alza majestuosamente sobre las aguas del océano Pacífico, simboliza la conexión entre el pasado y el presente tecnológico de la ciudad. Esta metrópolis es la puerta de entrada a Silicon Valley, donde las gigantes tecnológicas como Apple y Google dan forma al futuro.</p>
-                <img src="../assets/images/sanfrancisco (1).webp" alt="City of San Francisco" class="right-img">
+                <p class="justify-left">San Francisco, conocida como la "Ciudad de la Bahía", es un epicentro
+                    tecnológico situado en la costa oeste de los Estados Unidos. El icónico Golden Gate Bridge, que se
+                    alza majestuosamente sobre las aguas del océano Pacífico, simboliza la conexión entre el pasado y el
+                    presente tecnológico de la ciudad. Esta metrópolis es la puerta de entrada a Silicon Valley, donde
+                    las gigantes tecnológicas como Apple y Google dan forma al futuro.</p>
+                <img src="../assets/images/sanfrancisco.webp" alt="City of San Francisco" class="right-img">
             </section>
             <section class="city-details">
-                <img src="../assets/images/chinatown.webp" alt="City of San Francisco" class="left-img">
-                <p class="justify-right">Pero San Francisco es mucho más que tecnología; es una amalgama de culturas y creatividad. Sus barrios como Chinatown y Haight-Ashbury son testigos de esta diversidad, mientras que museos como el SFMOMA desafían los límites de la creatividad. La escena gastronómica fusiona alta cocina con la comida callejera de una manera única, deleitando a los paladares más exigentes.</p>
+                <video src="../assets/video/SF.mp4" autoplay loop class="left-img"></video>
+                <p class="justify-right">Pero San Francisco es mucho más que tecnología; es una amalgama de culturas y
+                    creatividad. Sus barrios como Chinatown y Haight-Ashbury son testigos de esta diversidad, mientras
+                    que museos como el SFMOMA desafían los límites de la creatividad. La escena gastronómica fusiona
+                    alta cocina con la comida callejera de una manera única, deleitando a los paladares más exigentes.
+                </p>
         </article>
         <article id="seoul" class="city-article">
             <h2>Seoul, Corea del Sur</h2>
             <section class="city-details">
                 <img src="../assets/images/seoul.webp" alt="City of Seoul" class="left-img">
-                <p class="justify-right">Seúl, la vibrante capital de Corea del Sur, es un destino que fusiona una rica herencia cultural con una innovación tecnológica puntera. Situada en el corazón de la península coreana, esta ciudad ofrece una experiencia única que abarca desde palacios ancestrales hasta rascacielos futuristas.
-                Pero Seúl es más que solo una joya histórica. Es una metrópolis tecnológica donde gigantes como Samsung y LG lideran la vanguardia de la electrónica y la innovación. En los barrios de Gangnam y Dongdaemun, encontrarás centros comerciales futuristas y mercados de electrónica que te sumergirán en el mundo tecnológico de Corea del Sur.
+                <p class="justify-right">Seúl, la vibrante capital de Corea del Sur, es un destino que fusiona una rica
+                    herencia cultural con una innovación tecnológica puntera. Situada en el corazón de la península
+                    coreana, esta ciudad ofrece una experiencia única que abarca desde palacios ancestrales hasta
+                    rascacielos futuristas.
+                    Pero Seúl es más que solo una joya histórica. Es una metrópolis tecnológica donde gigantes como
+                    Samsung y LG lideran la vanguardia de la electrónica y la innovación. En los barrios de Gangnam y
+                    Dongdaemun, encontrarás centros comerciales futuristas y mercados de electrónica que te sumergirán
+                    en el mundo tecnológico de Corea del Sur.
                 </p>
             </section>
             <section class="city-details">
-                <p class="justify-left">La comida coreana, con su variedad de sabores y platos únicos, es una experiencia culinaria que no te puedes perder. Desde bulgogi a kimchi, cada bocado es una explosión de sabores que refleja la rica tradición gastronómica del país.
+                <p class="justify-left">La comida coreana, con su variedad de sabores y platos únicos, es una
+                    experiencia culinaria que no te puedes perder. Desde bulgogi a kimchi, cada bocado es una explosión
+                    de sabores que refleja la rica tradición gastronómica del país.
 
-                La cultura pop coreana, conocida como "Hallyu", también tiene un gran impacto en Seúl. Puedes explorar la influencia de la música K-pop, el cine y los dramas coreanos en lugares como el distrito de entretenimiento de Gangnam y el Museo de Historia de la Cultura Popular Coreana.</p>
-                <img src="../assets/images/korea.webp" alt="City of San Francisco" class="right-img">
+                    La cultura pop coreana, conocida como "Hallyu", también tiene un gran impacto en Seúl. Puedes
+                    explorar la influencia de la música K-pop, el cine y los dramas coreanos en lugares como el distrito
+                    de entretenimiento de Gangnam y el Museo de Historia de la Cultura Popular Coreana.</p>
+                <video src="../assets/video/seoul.mp4" autoplay loop class="right-img"></video>
             </section>
         </article>
         <article id="tokyo" class="city-article">
             <h2>Tokyo, Japón</h2>
             <section class="city-details">
-                <p class="justify-left">Tokio, la capital de Japón, es una metrópolis de contrastes fascinantes donde lo tradicional y lo futurista se entrelazan de manera única. En el corazón de la nación del sol naciente, esta ciudad ofrece una experiencia de viaje que abarca desde antiguos templos hasta rascacielos vanguardistas.
-                Pero Tokio es mucho más que su historia. Es un epicentro tecnológico donde gigantes como Sony y Toyota lideran la revolución en electrónica y automoción. El distrito de Akihabara es un paraíso para los amantes de la tecnología y la electrónica, con tiendas que ofrecen los últimos gadgets y videojuegos.
+                <p class="justify-left">Tokio, la capital de Japón, es una metrópolis de contrastes fascinantes donde lo
+                    tradicional y lo futurista se entrelazan de manera única. En el corazón de la nación del sol
+                    naciente, esta ciudad ofrece una experiencia de viaje que abarca desde antiguos templos hasta
+                    rascacielos vanguardistas.
+                    Pero Tokio es mucho más que su historia. Es un epicentro tecnológico donde gigantes como Sony y
+                    Toyota lideran la revolución en electrónica y automoción. El distrito de Akihabara es un paraíso
+                    para los amantes de la tecnología y la electrónica, con tiendas que ofrecen los últimos gadgets y
+                    videojuegos.
                 </p>
                 <img src="../assets/images/tokyo.webp" alt="City of Tokyo" class="right-img">
             </section>
             <section class="city-details">
-                <img src="../assets/images/tokyocity.webp" alt="City of Tokyo" class="left-img">
-                <p class="justify-right">La gastronomía japonesa es otro aspecto destacado de Tokio, donde sushi, ramen, y tempura se sirven con maestría. La ciudad alberga una variedad de experiencias culinarias, desde puestos callejeros hasta restaurantes de alta cocina con estrellas Michelin.
+                <video src="../assets/video/tokyo.mp4" autoplay loop class="left-img"></video>
+                <p class="justify-right">La gastronomía japonesa es otro aspecto destacado de Tokio, donde sushi, ramen,
+                    y tempura se sirven con maestría. La ciudad alberga una variedad de experiencias culinarias, desde
+                    puestos callejeros hasta restaurantes de alta cocina con estrellas Michelin.
 
-                La cultura pop japonesa, desde el manga y el anime hasta la música J-pop, es una parte integral de la vida en Tokio. En el distrito de Harajuku, puedes encontrar tiendas temáticas únicas y cafés inspirados en tus personajes favoritos.</p>
+                    La cultura pop japonesa, desde el manga y el anime hasta la música J-pop, es una parte integral de
+                    la vida en Tokio. En el distrito de Harajuku, puedes encontrar tiendas temáticas únicas y cafés
+                    inspirados en tus personajes favoritos.</p>
             </section>
         </article>
     </main>
     <footer>
-        <p>Copyright © 2023 | · Todos los derechos reservados · Aviso Legal | Política de privavidad | Política de cookies</p>
-    </footer>   
+        <p>Copyright © 2023 | · Todos los derechos reservados · Aviso Legal | Política de privavidad | Política de
+            cookies</p>
+    </footer>
 </body>
+
 </html>
