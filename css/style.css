@@ -38,9 +38,6 @@ p {
 
 header {
     height: 120px;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 nav {
