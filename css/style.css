@@ -468,6 +468,11 @@ input[type="submit"]:hover {
     background-color: #EF233C;
 }
 
+pre {
+    background-color: #2B2D42;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 
 
